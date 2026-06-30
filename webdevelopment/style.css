@@ -58,4 +58,13 @@ body {
 
 a {
   text-decoration: underline;
+  color: #FD7B41;
+  transition: color 0.25s ease, transform 0.25s ease;
 }
+
+a:hover {
+  color: #3C4044;
+  transform: scale(1.00);
+  text-decoration: none;
+}
+
