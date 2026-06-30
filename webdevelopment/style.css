@@ -9,6 +9,7 @@ p {
   color: #9D00FF;
   font-size: 20px;
   text-align: center;
+  font-family: Creato Display, serif;
 }
 h3 {
   text-align: center;
@@ -24,5 +25,11 @@ blockquote {
     font-display: swap;
 }​
 
-​
+​@font-face {
+  font-family: Creato Display;
+  src: url("ProfaTrial-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
    
