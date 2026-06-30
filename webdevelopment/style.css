@@ -29,7 +29,7 @@ blockquote {
   font-family: 'Creato Display';
   src: url("CreatoDisplay-Thin.otf") format('opentype');
     font-weight: normal;
-    font-style: normal;
+    font-style: thin;
     font-display: swap;
 }
    
