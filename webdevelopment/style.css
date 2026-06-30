@@ -16,11 +16,12 @@ h3 {
 blockquote {
   text-align: center;
 }
-@fontface {
+@font-face {
   font-family: PROFA;
   src: url("../webdevelopment/ProfaTrial-Regular.ttf") format('truetype');
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 <div class="evenbettter.png"></div>​
 
