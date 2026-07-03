@@ -18,6 +18,12 @@ h3 {
   text-align: center;
 }
 
+.story-heading {
+  text-align: center;
+  color: #FD7B41;
+  font-family: PROFA, serif;
+}
+
 blockquote {
   color: #3C4044;
   font-size: 20px;
@@ -75,6 +81,7 @@ ul {
   font-family: 'Creato Display', serif;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.747);
   margin: 20px 40px;
+  text-align: left;
 }
 
 ul:hover {
@@ -89,4 +96,5 @@ ul:hover {
   background-color: #888580;
   border-radius: 8px;
 }
+
 
