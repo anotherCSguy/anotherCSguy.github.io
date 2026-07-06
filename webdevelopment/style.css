@@ -14,6 +14,31 @@ p {
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.35);
 
 }
+
+/* styling for reflection paragraphs */
+.reflection-paragraph::first-line {
+  text-indent: 2em;
+}
+
+/* First letter style, just a big ol' orange L */
+.opening-paragraph::first-letter {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #FD7B41;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.1em;
+}
+
+/* content box styling */
+.reflection-box {
+  background-color: rgba(34, 34, 34, 0.9);
+  border: 3px solid #FD7B41;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+}
 h3 {
   text-align: center;
 }
@@ -22,6 +47,7 @@ h3 {
   text-align: center;
   color: #FD7B41;
   font-family: PROFA, serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
 blockquote {
@@ -50,7 +76,7 @@ blockquote {
 body {
   margin: 0;
   min-height: 100vh;
-  background-image: url("computer_tower.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("computer_tower.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
