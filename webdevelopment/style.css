@@ -15,12 +15,11 @@ p {
 
 }
 
-/* styling for reflection paragraphs */
+/* Pseudo-element styling for reflection paragraphs */
 .reflection-paragraph::first-line {
   text-indent: 2em;
 }
 
-/* First letter style, just a big ol' orange L */
 .opening-paragraph::first-letter {
   font-size: 2.2em;
   font-weight: 700;
@@ -30,7 +29,7 @@ p {
   margin-right: 0.1em;
 }
 
-/* content box styling */
+/* Reflection content box styling */
 .reflection-box {
   background-color: rgba(34, 34, 34, 0.9);
   border: 3px solid #FD7B41;
@@ -51,7 +50,7 @@ h3 {
 }
 
 blockquote {
-  color: #DDDCDB;
+  color: #dddcdb;
   font-size: 20px;
   text-align: center;
   font-style:italic;
@@ -89,6 +88,11 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
 }
 
+.homepage-header {
+  text-align: center;
+  margin-top: 20px;
+}
+
 a {
   text-decoration: underline;
   color: #FD7B41;
@@ -111,7 +115,7 @@ ul {
 }
 
 ul:hover {
-  color: #fd7b41;
+  color: #FD7B41;
 }
 
 .resume-link {
