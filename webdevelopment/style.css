@@ -146,13 +146,12 @@ ul:hover {
   border-radius: 8px;
 }
 
-.story-heading .professional-image {
+.professional-image {
   display: block;
   margin: 0 auto 12px;
-  height: 150px;
+  height: 300px;
   width: auto;
   max-width: 220px;
-  vertical-align: middle;
   object-fit: cover;
 }
 
