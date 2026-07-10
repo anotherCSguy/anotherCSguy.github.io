@@ -146,6 +146,14 @@ ul:hover {
   border-radius: 8px;
 }
 
+video {
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #FD7B41;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
 .professional-image {
   display: block;
   margin: 0 auto 12px;
@@ -153,4 +161,71 @@ ul:hover {
   width: auto;
   max-width: 220px;
   object-fit: cover;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
+
+@media print {
+  body {
+    margin: 1in;
+    color: #000;
+    font-family: serif;
+    background: none;
+  }
+
+  body * {
+    color: #000 !important;
+    background: transparent !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-only h1,
+  .print-only p,
+  .print-only ul,
+  .print-only footer {
+    display: block !important;
+  }
+
+  .print-only ul {
+    list-style: disc inside;
+    margin-left: 0;
+    padding-left: 1em;
+  }
+
+  .print-only footer {
+    margin-top: 1em;
+  }
+
+  header,
+  nav,
+  .page-title-header,
+  .story-heading,
+  .professional-image,
+  .resume-link,
+  video,
+  .about-page,
+  .reflection-box,
+  .dropdown,
+  .dropdown-content,
+  .resume-link,
+  .page-title-header,
+  .hero,
+  .homepage-header,
+  a,
+  ul:not(.print-only ul),
+  .story-heading,
+  .reflection-paragraph,
+  .opening-paragraph {
+    display: none !important;
+  }
+}
+
+.professional-image:hover {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
