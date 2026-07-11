@@ -164,63 +164,35 @@ video {
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 
+.print-only {
+  display: none;
+}
+
 @media print {
   body {
     margin: 1in;
     color: #000;
     font-family: serif;
-    background: none;
+    background: none !important;
   }
 
-  body * {
+  body > * {
+    display: none !important;
+  }
+
+  .print-only,
+  .print-only * {
+    display: block !important;
     color: #000 !important;
     background: transparent !important;
     text-shadow: none !important;
     box-shadow: none !important;
   }
 
-  .print-only {
-    display: block !important;
-  }
-
-  .print-only h1,
-  .print-only p,
-  .print-only ul,
-  .print-only footer {
-    display: block !important;
-  }
-
   .print-only ul {
     list-style: disc inside;
-    margin-left: 0;
+    margin: 0 0 1em;
     padding-left: 1em;
-  }
-
-  .print-only footer {
-    margin-top: 1em;
-  }
-
-  header,
-  nav,
-  .page-title-header,
-  .story-heading,
-  .professional-image,
-  .resume-link,
-  video,
-  .about-page,
-  .reflection-box,
-  .dropdown,
-  .dropdown-content,
-  .resume-link,
-  .page-title-header,
-  .hero,
-  .homepage-header,
-  a,
-  ul:not(.print-only ul),
-  .story-heading,
-  .reflection-paragraph,
-  .opening-paragraph {
-    display: none !important;
   }
 }
 
