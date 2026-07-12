@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!--
+  Name: Elisha Miller
+  Date: 6/20/206
+  Course: Web Design
+  Description: Boilerplate for websites-->
+  <head>
+    <!-- Title of the website--><title>Contact</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <!-- The top portion of the website showing the logo and other information-->
+  <!-- The main section of the website displaying conent-->
+<body>  
+  <header>
+    <img src="logo.png" alt="Your Site Logo">
+    <nav>
+      <ul>
+        <li><a href="a.html">Home</a></li>
+        <li><a href="b.html">About</a></li>
+        <li class="dropdown">
+          <a href="c.html" class="dropbtn">Projects</a>
+          <div class="dropdown-content">
+            <a href="project1.html">Project 1</a>
+            <a href="project2.html">Project 2</a>
+            <a href="project3.html">Project 3</a>
+          </div>
+        </li>
+        <li><a href="reflection.html">Reflections</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <h1>CONTACT</h1>
+    <!-- Contact form for users to fill out and submit-->
+    <form class="contact-form" action="#" method="post">
+      
+      <!-- Title field for user input-->
+      <div class="form-row">
+        <label for="title">Title</label>
+        <select id="title" name="title" required>
+          <option value="">Select title</option>
+          <option>Mr.</option>
+          <option>Ms.</option>
+          <option>Dr.</option>
+          <option>Prof.</option>
+        </select>
+      </div>
+      <!-- Full name fields for user input-->
+      <div class="form-row">
+        <label for="full-name">Full Name</label>
+        <input id="full-name" name="full-name" type="text" placeholder="Enter your full name" required>
+      </div>
+      <!-- Email fields for user input-->
+      <div class="form-row">
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email address" required>
+      </div>
+      <!-- Reason for contact fields for user input-->
+      <div class="form-row">
+        <label for="topic">Reason for contact</label>
+        <select id="topic" name="topic" required>
+          <option value="">Choose an option</option>
+          <option>Resume review</option>
+          <option>Project inquiry</option>
+          <option>Career advice</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <!-- Message field for user input-->
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Type your message here" required></textarea>
+      </div>
+      
+      <!-- A button that you click-->
+      <button type="submit">Submit</button>
+    </form>
+
+    <footer class="contact-footer">
+      <div class="contact-item">
+        Elisha Miller
+      </div>
+      <div class="contact-item">
+        <img src="icons8-email-50.png" alt="Email icon" class="contact-icon">
+        <span>milleredm.19@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <img src="icons8-phone-50.png" alt="Phone icon" class="contact-icon">
+        <span>660-216-7577</span>
+      </div>
+    </footer>
+  </body>
+</html>
