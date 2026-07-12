@@ -156,6 +156,7 @@ ul:hover {
   color: #f8f8f8;
 }
 
+/* Contact item styling */
 .contact-item {
   display: flex;
   align-items: center;
@@ -163,13 +164,96 @@ ul:hover {
   margin-bottom: 10px;
 }
 
+/* Remove bottom margin for the last contact item */
 .contact-item:last-child {
   margin-bottom: 0;
 }
 
+/* Contact icon styling */
 .contact-icon {
   width: 24px;
   height: 24px;
+}
+
+/* Contact form styling */
+.contact-form {
+  max-width: 640px;
+  margin: 20px auto 40px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Form row styling */
+.contact-form .form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+/* Form labels */
+.contact-form label {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #f8f8f8;
+}
+
+/* Form inputs and textareas */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+/* Form select dropdowns */
+.contact-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #1b1b1b;
+  font-size: 1rem;
+  outline: none;
+}
+/* Placeholder text styling */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Focus states for inputs, textareas, and selects */
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #FD7B41;
+  box-shadow: 0 0 0 4px rgba(253, 123, 65, 0.12);
+}
+
+/* Submit button styling */
+.contact-form button {
+  width: 100%;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #FD7B41;
+  color: #f8f8f8;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+/* Submit button hover effect */
+.contact-form button:hover {
+  background: #e06834;
+  transform: translateY(-1px);
 }
 
 video {
@@ -226,3 +310,4 @@ video {
   transform: scale(1.03);
   filter: brightness(1.05);
 }
+
