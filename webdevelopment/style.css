@@ -329,3 +329,55 @@ video {
   filter: brightness(1.05);
 }
 
+/* Desktop and mobile media queries */
+@media (min-width: 769px) {
+  /* Desktop*/
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+  }
+
+  .about-full {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile*/
+  .about-grid,
+  .about-full {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .story-heading,
+  .about-full > div:first-child h2 {
+    text-align: left;
+  }
+
+  .professional-image {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  video {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .resume-link {
+    display: block;
+    margin: 12px auto;
+  }
+}
+
