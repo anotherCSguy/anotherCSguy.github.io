@@ -20,6 +20,7 @@ nav {
   align-items: center;
   margin-top: 0;
   flex: 1;
+  gap: 10px;
 }
 
 nav ul {
@@ -70,4 +71,25 @@ nav ul:hover a:hover {
   color: #FD7B41;
   background-color: rgba(253, 123, 65, 0.15);
   transform: scale(1.05);
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .dropdown-content {
+    display: none !important;
+  }
 }
