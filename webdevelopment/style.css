@@ -25,6 +25,24 @@ h1 {
   margin: 0 auto;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+}
+
+.about-full {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+}
+
+.about-full > div:first-child h2 {
+  width: max-content;
+  margin: 0 auto 12px;
+}
+
 p {
   color: #f8f8f8;
   font-size: 30px;
@@ -180,7 +198,7 @@ ul:hover {
   max-width: 640px;
   margin: 20px auto 40px;
   padding: 24px;
-  background: rgba(255, 255, 255, 0.1);
+  background: #f8f8f8;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
@@ -196,7 +214,7 @@ ul:hover {
 .contact-form label {
   font-size: 0.95rem;
   margin-bottom: 8px;
-  color: #f8f8f8;
+  color: #0a0a0a;
 }
 
 /* Form inputs and textareas */
@@ -207,7 +225,7 @@ ul:hover {
   border: 1px solid rgba(255, 255, 255, 0.18);
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.08);
-  color: #fff;
+  color: #000000;
   font-size: 1rem;
   outline: none;
 }
@@ -225,7 +243,7 @@ ul:hover {
 /* Placeholder text styling */
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: #6e6e6e;
 }
 
 /* Focus states for inputs, textareas, and selects */
