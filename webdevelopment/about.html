@@ -11,15 +11,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to css stylesheet-->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>  
-  <!-- The main section of the website displaying conent-->
-  <body>
-  
-  
-  <!--The top portion of the website showing the logo and other information-->
+
+  <!-- The top portion of the website showing the logo and other information-->
   <header>
     <img src="logo.png" alt="Your Site Logo">
     <nav>
@@ -39,7 +36,8 @@
       </ul>
     </nav>
   </header>
-
+  <!-- The main section of the website displaying conent-->
+  <body>
 
     <div class="print-only">
       <p>Elisha Miller</p>
@@ -60,34 +58,43 @@
       <h1 class="about-page">ABOUT</h1>
     </header>
       
-      <h2 class="story-heading">
-        My Story</h2>
-          <p> My name is Elisha Miller. </p>
-        
+    <main class="about-grid">
+      <section>
+        <h2 class="story-heading">My Story</h2>
         <p>I am a game developer from a small town called Kirksville, Missouri. 
-        As a young kid I have always loved playing video games and seeing what stories they hold. 
-        I remember sitting in my bed or sitting in class drawing game concepts and exploring new ideas of my version of a perfect game. 
-        Between fiddling around in Blender and following tutorials for Unreal Engine, my love for games and the process for making them grew. 
-        I hope to create fascinating stories and inspire new game developers just like I was. </p>
-    
-    <img class="professional-image" src="media/professional_image.png" alt="Professional Image">      
-    
-    <h2 style="text-align: center; color: #FD7B41; font-family: PROFA, serif;">Education</h2>
+          As a young kid I have always loved playing video games and seeing what stories they hold. 
+          I remember sitting in my bed or sitting in class drawing game concepts and exploring new ideas of my version of a perfect game. 
+          Between fiddling around in Blender and following tutorials for Unreal Engine, my love for games and the process for making them grew. 
+          I hope to create fascinating stories and inspire new game developers just like I was.</p>
+      </section>
 
-    <ul>
-      <li>Truman State University: Computer Science (2020-2021)</li>
-      <li>Google IT Certification (2022)</li>
-      <li>MACC (2023-2025)</li>
-      <li>ITF+ Certification (2024)</li>
-      <li>University of Missouri: Computer Science (2026-Present)</li>
-      <li>Graduation (Spring 2027)</li>
-    </ul>
+      <section>
+        <p>My name is Elisha Miller.</p>
+        <img class="professional-image" src="media/professional_image.png" alt="Professional Image">
+        <p><a href="millerresume.pdf" class="resume-link">View my resume</a></p>
+      </section>
 
-    <video controls width="640" src="media/videos/Resume_Video.mp4">
-      Your browser does not support the video tag.
-    </video>
+      <section class="about-full">
+        <div>
+          <h2 style="color: #FD7B41; font-family: PROFA, serif;">Education</h2>
+          <ul>
+            <li>Truman State University: Computer Science (2020-2021)</li>
+            <li>Google IT Certification (2022)</li>
+            <li>MACC (2023-2025)</li>
+            <li>ITF+ Certification (2024)</li>
+            <li>University of Missouri: Computer Science (2026-Present)</li>
+            <li>Graduation (Spring 2027)</li>
+          </ul>
+        </div>
 
-    <p><a href="millerresume.pdf" class="resume-link">View my resume</a></p>
+        <div>
+          <video controls width="640" src="media/videos/Resume_Video.mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+      </section>
+    </main>
     
     <footer class="contact-footer">
       <div class="contact-item">
@@ -103,9 +110,6 @@
       </div>
     </footer>
   </body>
-  <!-- Foot note on the bottom of the website showing the owner-->
- 
-
-
 
 </html>
+
