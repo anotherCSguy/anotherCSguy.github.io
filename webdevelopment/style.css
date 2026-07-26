@@ -259,6 +259,77 @@ ul:hover {
   box-shadow: 0 0 0 4px rgba(253, 123, 65, 0.12);
 }
 
+.project-table-figure {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 980px;
+  background: #644848;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.project-table-figure figcaption {
+  color: #FD7B41;
+  font-family: PROFA, serif;
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.project-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #FD7B41;
+  min-width: 620px;
+}
+
+.project-table th,
+.project-table td {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 14px 12px;
+  text-align: left;
+  color: #f8f8f8;
+}
+
+.project-table thead th {
+  background: rgba(253, 123, 65, 0.22);
+  color: #fff;
+}
+
+.project-table tr:nth-child(1),
+.project-table tr:nth-child(3) {
+  background: rgba(253, 123, 65, 0.14);
+}
+
+.project-table tbody tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.project-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.project-table th[scope="row"] {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .project-table-figure {
+    overflow-x: auto;
+  }
+
+  .project-table {
+    min-width: 100%;
+    font-size: 0.95rem;
+  }
+
+  .project-table th,
+  .project-table td {
+    padding: 12px 10px;
+  }
+}
+
 /* Submit button styling */
 .contact-form button {
   width: 100%;
