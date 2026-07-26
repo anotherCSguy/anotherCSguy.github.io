@@ -1,9 +1,21 @@
+/* Custom styles for all <h1> elements */
 h1 {
   color: #FD7B41;
   font-size: 50px;
   text-align: center;
   font-family: PROFA, serif;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.45);
+  letter-spacing: 0.08em;
+  text-decoration: underline dotted rgba(253, 123, 65, 0.75);
+  text-underline-offset: 0.5rem;
+}
+
+h2 {
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  text-shadow: 1px 1px 3px rgba(253, 123, 65, 0.65);
+  text-decoration: underline solid rgba(253, 123, 65, 0.55);
+  text-transform: uppercase;
 }
 
 .about-page {
@@ -99,6 +111,8 @@ blockquote {
   font-family: PROFA, serif;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.35);
 }
+
+/* Custom font for headings */
 @font-face {
   font-family: PROFA;
   src: url("ProfaTrial-Regular.ttf") format('truetype');
@@ -106,6 +120,7 @@ blockquote {
     font-style: normal;
     font-display: swap;
 }
+/* Custom font for body text */
 @font-face {
   font-family: 'Creato Display';
   src: url("CreatoDisplay-Thin.otf") format('opentype');
