@@ -85,6 +85,10 @@ nav .navMenu:hover a:hover {
 }
 
 @media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
   nav .navMenu {
     display: none;
     flex-direction: column;
@@ -94,6 +98,11 @@ nav .navMenu:hover a:hover {
     background-color: #DDDCDB;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     padding: 10px 0;
+  }
+
+  /* Toggle nav menu on checkbox */
+  #menu-toggle:checked + #hamburger + .navMenu {
+    display: flex;
   }
 
   .hamburger-menu {
